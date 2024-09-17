@@ -16,7 +16,7 @@ const DriverAllocation = () => {
   };
 
   const handleCancelBooking = () => {
-    // Handle the cancel booking logic
+    
     console.log('Booking cancelled');
   };
 
