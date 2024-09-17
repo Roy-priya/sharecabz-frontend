@@ -23,12 +23,16 @@ import Activity from "../screens/TripDetails";
 import AdminHome from "../screens/Admin/AdminHome";
 import JsonSlice, { updateField } from "../utils/JsonSlice";
 import UserDetailPage from "../screens/Admin/UserDetailPage";
+import DriverAllocation from "../screens/Admin/DriverAllocation";
+
+
 
 const Stack = createStackNavigator();
 
 const AuthStack = () => (
   <Stack.Navigator screenOptions={{ headerShown: false }}>
-    <Stack.Screen name="SignIn" component={SignIn} />
+    { <Stack.Screen name="SignIn" component={SignIn} /> }
+    
     <Stack.Screen name="SignUp" component={SignUpScreen} />
     <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
   </Stack.Navigator>
@@ -53,6 +57,9 @@ const MainStack = () => (
     
     <Stack.Screen name="AdminHome" component={AdminHome} />
     <Stack.Screen name="UserDetailPage" component={UserDetailPage} />
+    <Stack.Screen name="DriverAllocation" component={DriverAllocation} />
+  
+
 
   </Stack.Navigator>
 );
